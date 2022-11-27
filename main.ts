@@ -19,16 +19,6 @@ input.onGesture(Gesture.Shake, function () {
         . # . # .
         `)
     music.playSoundEffect(music.createSoundEffect(
-    WaveShape.Sawtooth,
-    2334,
-    1,
-    255,
-    0,
-    1694,
-    SoundExpressionEffect.None,
-    InterpolationCurve.Logarithmic
-    ), SoundExpressionPlayMode.UntilDone)
-    music.playSoundEffect(music.createSoundEffect(
     WaveShape.Noise,
     5000,
     1,
@@ -46,3 +36,13 @@ basic.showLeds(`
     . # . # .
     . . # . .
     `)
+music.playSoundEffect(music.createSoundEffect(
+WaveShape.Sawtooth,
+2334,
+1,
+255,
+0,
+1694,
+SoundExpressionEffect.None,
+InterpolationCurve.Logarithmic
+), SoundExpressionPlayMode.UntilDone)
